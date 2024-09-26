@@ -1,4 +1,23 @@
-# Week 1
+* [Week 1](#week-1---3-october-2024)
+* [Week 2](#week-2---10-october-2024)
+* Week 3 (October Break)
+* [Week 4](#week-4---24-october-2024)
+* [Week 5](#week-5---31-october-2024)
+* [Week 6](#week-6---7-november-2024)
+* [Week 7](#week-7---14-november-2024)
+* [Week 8](#week-8-backup---21-november-2024)
+* [Week 9](#week-9---28-november-2024)
+* [Week 10](#week-10-backup---5-december-2024)
+* [Week 11](#week-11---12-december-2024)
+
+# Week 1 - 3 October 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -21,7 +40,14 @@ Have some options, maybe with one I would prefer to pick. It needs to be:
 
 TBD
 
-# Week 2
+# Week 2 - 10 October 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -45,7 +71,14 @@ TBD
 
 # Week 3 (October Break)
 
-# Week 4
+# Week 4 - 24 October 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -59,7 +92,14 @@ The outcome of this experiment will decide if we need to make any changes or if 
 
 TBD
 
-# Week 5
+# Week 5 - 31 October 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -75,7 +115,14 @@ Possibility to add any post-processing such as restoration techniques etc.
 
 TBD
 
-# Week 6
+# Week 6 - 7 November 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -87,7 +134,14 @@ This week will focus on performing the second experiment with any new models / a
 
 TBD
 
-# Week 7
+# Week 7 - 14 November 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -99,7 +153,14 @@ Bulk writing of report.
 
 TBD
 
-# Week 8 (Backup)
+# Week 8 (Backup) - 21 November 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -109,7 +170,14 @@ TBD
 
 TBD
 
-# Week 9
+# Week 9 - 28 November 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -121,7 +189,14 @@ Veronika will be reading research paper reports on 5th December. Submit initial 
 
 TBD
 
-# Week 10 (Backup)
+# Week 10 (Backup) - 5 December 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ## Goals
 
@@ -131,7 +206,14 @@ TBD
 
 
 
-# Week 11
+# Week 11 - 12 December 2024
+
+- What helped you this week?
+- What did you achieve?
+- What did you struggle with?
+- What would you like to work on next week?
+- Where do you need help from Veronika?
+- What are the agreements after this meeting?
 
 ### Finish Paper :x:
 
