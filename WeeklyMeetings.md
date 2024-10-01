@@ -21,7 +21,7 @@
 
 ## Goals
 
-### Literature Review :x:
+### Literature Review :on:
 
 Find and summarize some research papers (2 or 3 promising ones), about how to crop/rectify to reshape QR code and remove artifacts.
 - https://ieeexplore.ieee.org/abstract/document/6958902
@@ -29,7 +29,7 @@ Find and summarize some research papers (2 or 3 promising ones), about how to cr
 
 Create a few slides for presenting the literature and what can be used.
 
-### Determine CNN Archetecture and Method to Adopt :x:
+### Determine CNN Archetecture and Method to Adopt :on:
 
 Have some options, maybe with one I would prefer to pick. It needs to be:
 - An architechture I understand
