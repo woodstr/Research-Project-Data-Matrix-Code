@@ -12,24 +12,19 @@
 
 # Week 1 - 3 October 2024
 
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
-
 ## Goals
 
-### Literature Review :on:
+### Literature Review :heavy_check_mark:
 
 Find and summarize some research papers (2 or 3 promising ones), about how to crop/rectify to reshape QR code and remove artifacts.
-- https://ieeexplore.ieee.org/abstract/document/6958902
+- https://arxiv.org/pdf/1506.02640
 - https://iopscience.iop.org/article/10.1088/2631-8695/acb67e/pdf
 
 Create a few slides for presenting the literature and what can be used.
 
-### Determine CNN Archetecture and Method to Adopt :on:
+https://slides.com/aidanstocks/literature-review
+
+### Determine CNN Archetecture and Method to Adopt :heavy_check_mark:
 
 Have some options, maybe with one I would prefer to pick. It needs to be:
 - An architechture I understand
@@ -38,32 +33,29 @@ Have some options, maybe with one I would prefer to pick. It needs to be:
 
 ## Outcome of Week
 
-TBD
+Decided on:
+- Trying out pretrained YOLO models on MAN ES provided dataset
+- Finding a python library for non-rigid deformable transformation (bending cylinder shape etc.)
+- Train non-pretrained YOLO on kaggle dataset to see how it performs
+- See if YOLO pretrained on different datasets exists and compare
 
 # Week 2 - 10 October 2024
 
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
-
 ## Goals
 
-### Data Annotation :x:
+### Data Annotation :on:
 
-Annotate MAN ES provided dataset according to chosen model architecture. Model could be predicting dots, coordinates, a mix...
+Annotate MAN ES provided dataset according to YOLO architecture. Model is predicting [x,y,W,h] of bounding boxes.
 
-### Source Dataset (for transfer learning) :x:
+### YOLO models :on:
 
-Find and prepare a public dataset (containing any DM code like images) for the bulk training of the chosen model. This will be ~90% of the models training process.
+Find (and download) some different pretrained YOLO models.
 
-We will later finetune the model to the MAN ES provided dataset.
+Also set up pipeline for training untrained YOLO models.
 
-### Evaluation Metric :x:
+### Evaluation Metric :on:
 
-Based on previous papers choices, decide upon an evaluation metric. Will likely be a simple metric like accuracy, as false positives should not be likely with Data Matrix decoding.
+Decide upon an evaluation metric. Will likely be a simple metric like accuracy, as false positives should not be likely with Data Matrix decoding.
 
 ## Outcome of Week
 
@@ -72,13 +64,6 @@ TBD
 # Week 3 (October Break)
 
 # Week 4 - 24 October 2024
-
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
 
 ## Goals
 
@@ -93,13 +78,6 @@ The outcome of this experiment will decide if we need to make any changes or if 
 TBD
 
 # Week 5 - 31 October 2024
-
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
 
 ## Goals
 
@@ -117,13 +95,6 @@ TBD
 
 # Week 6 - 7 November 2024
 
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
-
 ## Goals
 
 ### Experiment 2 :x:
@@ -135,13 +106,6 @@ This week will focus on performing the second experiment with any new models / a
 TBD
 
 # Week 7 - 14 November 2024
-
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
 
 ## Goals
 
@@ -155,13 +119,6 @@ TBD
 
 # Week 8 (Backup) - 21 November 2024
 
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
-
 ## Goals
 
 TBD
@@ -171,13 +128,6 @@ TBD
 TBD
 
 # Week 9 - 28 November 2024
-
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
 
 ## Goals
 
@@ -191,13 +141,6 @@ TBD
 
 # Week 10 (Backup) - 5 December 2024
 
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
-
 ## Goals
 
 
@@ -207,13 +150,6 @@ TBD
 
 
 # Week 11 - 12 December 2024
-
-- What helped you this week?
-- What did you achieve?
-- What did you struggle with?
-- What would you like to work on next week?
-- Where do you need help from Veronika?
-- What are the agreements after this meeting?
 
 ### Finish Paper :x:
 
