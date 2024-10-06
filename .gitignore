@@ -6,3 +6,6 @@ notebooks/yolo11n.pt
 notebooks/yolo11n-seg.pt
 notebooks/yolo11x.pt
 notebooks/yolo11x-seg.pt
+
+# Copied Kaggle data
+data/kaggle
