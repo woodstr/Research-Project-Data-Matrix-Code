@@ -10,5 +10,5 @@ notebooks/yolo11x-seg.pt
 # Copied Kaggle data
 data/kaggle
 
-# Ignore symlink (it's just for github front page)
-.github/README.md
+# Ignore all README files (edit them on GitHub page)
+*.md
