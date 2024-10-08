@@ -47,7 +47,7 @@ Decided on:
 
 Annotate MAN ES provided dataset according to YOLO architecture. Model is predicting [x,y,W,h] of bounding boxes.
 
-### YOLO models :on:
+### YOLO models :heavy_check_mark:
 
 Find (and download) some different pretrained YOLO models.
 
