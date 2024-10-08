@@ -2,13 +2,20 @@
 data/raw/
 
 # Downloaded YOLO models
+yolo/models/yolo11n.pt
+yolo/models/yolo11n-seg.pt
+yolo/models/yolo11x.pt
+yolo/models/yolo11x-seg.pt
 notebooks/yolo11n.pt
-notebooks/yolo11n-seg.pt
-notebooks/yolo11x.pt
-notebooks/yolo11x-seg.pt
 
 # Copied Kaggle data
 data/kaggle
 
 # Ignore all README files (edit them on GitHub page)
 *.md
+
+# Ignore roboflow api key file
+roboflow_api_key.txt
+
+# Ignore downloaded roboflow dataset
+data/processed/
