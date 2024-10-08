@@ -59,7 +59,27 @@ Decide upon an evaluation metric. Will likely be a simple metric like accuracy, 
 
 ## Outcome of Week
 
-TBD
+### Data Annotation
+
+Colleague showed me roboflow website. Used it to annotate the 180 images with the bounding boxes with no issues and high convenience (took maybe an hour).
+
+### YOLO models
+
+## pretrained yolov11
+The yolov11 model by [ultralytics](https://docs.ultralytics.com/) is pretrained on the [COCO](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/coco.yaml) dataset.
+
+Without any additional training, it performed very poorly on the unseen MAN-ES datamatrix dataset. only 2 of the images had their DM codes identified, with the classes "keyboard" and "book".
+
+## yolov11 trained on kaggle dataset
+Training the yolov11 model from scratch on the [kaggle QR code dataset](https://www.kaggle.com/datasets/hamidl/yoloqrlabeled?resource=download) yielded IN PROGRESS...
+
+## pretrained yolov11 trained on kaggle dataset
+Training the pretrained yolov11 model on the [kaggle QR code dataset](https://www.kaggle.com/datasets/hamidl/yoloqrlabeled?resource=download) yielded IN PROGRESS...
+
+## Evaluation Metric
+Proposed evaluation metrics are:
+- Final DM code decoding rate from models
+- mAP50-95: "The average of the mean average precision calculated at varying IoU thresholds, ranging from 0.50 to 0.95. It gives a comprehensive view of the model's performance across different levels of detection difficulty."
 
 # Week 3 (October Break)
 
