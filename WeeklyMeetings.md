@@ -43,7 +43,7 @@ Decided on:
 
 ## Goals
 
-### Data Annotation :on:
+### Data Annotation :heavy_check_mark:
 
 Annotate MAN ES provided dataset according to YOLO architecture. Model is predicting [x,y,W,h] of bounding boxes.
 
