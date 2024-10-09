@@ -13,7 +13,7 @@ cache: false
 device: null
 workers: 0
 project: null
-name: train
+name: train2
 exist_ok: false
 pretrained: false
 optimizer: auto
@@ -104,4 +104,4 @@ erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: c:\Users\aidan\OneDrive\Desktop\itu\msc\courses\sem3\research_project\Research-Project-Data-Matrix-Code-\yolo\runs\detect\train
+save_dir: c:\Users\aidan\OneDrive\Desktop\itu\msc\courses\sem3\research_project\Research-Project-Data-Matrix-Code-\yolo\runs\detect\train2

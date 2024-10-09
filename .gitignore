@@ -11,11 +11,11 @@ notebooks/yolo11n.pt
 # Copied Kaggle data
 data/kaggle
 
-# Ignore all README files (edit them on GitHub page)
+# all README files (edit them on GitHub page)
 *.md
 
-# Ignore roboflow api key file
+# roboflow api key file
 roboflow_api_key.txt
 
-# Ignore downloaded roboflow dataset
+# downloaded roboflow dataset
 data/processed/
