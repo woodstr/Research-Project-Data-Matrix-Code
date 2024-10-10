@@ -92,9 +92,28 @@ Proposed evaluation metrics are:
 
 ## Goals
 
-### Experiment 1 :x:
+### Models :on:
 
-This week will focus on performing the first experiment with the chosen model and our two datasets.
+This week will focus on performing the first experiment with the following models:
+- yolov11 trained from scratch on kaggle dataset
+- yolov11 trained from scratch on kaggle dataset and fine-tuned to MAN-ES DM dataset
+- yolov11 pretrained by ultralytics on COCO dataset
+- yolov11 pretrained by ultralytics on COCO dataset and fine-tuned on MAN-ES DM dataset
+
+### MAN-ES Train/Val/Test Splits :on:
+
+MAN-ES test data will be changed in the following ways:
+- Split into train/val/test with 100/30/50 splits.
+- Train split will be augmented with rotations, sheering, and cropping
+
+### Decoding Pipeline :on:
+
+The decoding pipeline for making predictions, cropping to bounding boxes, and attempting to decode DM codes with pylibdmtx.
+
+The pipeline will also calculate the following evaluations:
+- DM decode rate (% of decodings of test images)
+- Valid DM decode rate (% of _correct_ decodings of test images)
+- mAP scores for bounding boxes (calculated by ultralytics, is essentially the accuracy of the predicted bounding boxes compared to the manually annotated one)
 
 The outcome of this experiment will decide if we need to make any changes or if we can continue.
 
