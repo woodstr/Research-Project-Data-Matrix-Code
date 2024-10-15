@@ -19,3 +19,6 @@ roboflow_api_key.txt
 
 # downloaded roboflow dataset
 data/MAN
+
+# cropped images
+data/cropped
