@@ -105,7 +105,7 @@ MAN-ES test data will be changed in the following ways:
 - Split into train/val/test with 100/30/50 splits.
 - Train split will be augmented with rotations and sheering
 
-### Decoding Pipeline :on:
+### Decoding Pipeline :heavy_check_mark:
 
 The decoding pipeline for making predictions, cropping to bounding boxes, and attempting to decode DM codes with pylibdmtx.
 
