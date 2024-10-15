@@ -92,7 +92,7 @@ Proposed evaluation metrics are:
 
 ## Goals
 
-### Models :on:
+### Models :heavy_check_mark:
 
 This week will focus on performing the first experiment with the following models:
 - yolov11 trained from scratch on kaggle dataset
@@ -100,11 +100,11 @@ This week will focus on performing the first experiment with the following model
 - yolov11 pretrained by ultralytics on COCO dataset
 - yolov11 pretrained by ultralytics on COCO dataset and fine-tuned on MAN-ES DM dataset
 
-### MAN-ES Train/Val/Test Splits :on:
+### MAN-ES Train/Val/Test Splits :heavy_check_mark:
 
 MAN-ES test data will be changed in the following ways:
 - Split into train/val/test with 100/30/50 splits.
-- Train split will be augmented with rotations, sheering, and cropping
+- Train split will be augmented with rotations and sheering
 
 ### Decoding Pipeline :on:
 
