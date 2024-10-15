@@ -127,9 +127,13 @@ The outcome of this experiment will decide if we need to make any changes or if 
 | mAP50-95             | N/A      | 0.069          | 0.747             | **0.758**              |
 | DM decode rate       | 0.1      | 0.04           | 0.1               | 0.1                    |
 | Valid DM decode rate | 0.1      | 0.04           | 0.1               | 0.1                    |
-| Total Runtime (s)*   | 136      | 24             | 27                | 34                     |
+| Total Runtime (s)    | 136      | 24             | 27                | 34                     |
 
-*Note that runtime was calculated as fair as reasonably possible (model pipeline stripped of other calculations). Reason for different model decode speeds is likely due to increased false positives on finetuned models. The baseline model is likely the slowest due to there being many more pixels in the image compared to the cropped images the models produce.
+Notes:
+- Runtime was calculated as fair as reasonably possible (model pipeline stripped of other calculations)
+- Reason for different model decode speeds is likely due to increased false positives on finetuned models
+- Baseline model being the slowest is likely due to there being many more pixels in the image compared to the cropped images the models produce
+- Kaggle Scratch fails to find 3 of the DM codes that other models find, leading to worse than baseline performance
 
 # Week 5 - 31 October 2024
 
