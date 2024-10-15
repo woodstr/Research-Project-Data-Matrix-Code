@@ -11,9 +11,6 @@ notebooks/yolo11n.pt
 # Copied Kaggle data
 data/kaggle
 
-# all README files (edit them on GitHub page)
-*.md
-
 # roboflow api key file
 roboflow_api_key.txt
 
