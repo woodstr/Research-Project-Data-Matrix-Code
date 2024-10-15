@@ -122,7 +122,7 @@ The outcome of this experiment will decide if we need to make any changes or if 
 Decodings not done yet!
 
 | Measure              | Kaggle Scratch | Kaggle Finetuned  | Ultralytics Finetuned  |
-| -------------------- | -------------- | ----------------- | ---------------------- |
+| -------------------- | :------------: | :---------------: | :--------------------: |
 | Precision            | 0.26           | 0.89              | **0.96**               |
 | Recall               | 0.24           | 0.84              | **0.9**                |
 | F1                   | 0.25           | 0.87              | **0.93**               |
