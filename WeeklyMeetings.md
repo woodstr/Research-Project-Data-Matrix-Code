@@ -119,16 +119,17 @@ The outcome of this experiment will decide if we need to make any changes or if 
 ## Outcome of Week
 
 ### Model Performances
-Decodings not done yet!
+| Measure              | Baseline | Kaggle Scratch | Kaggle Finetuned  | Ultralytics Finetuned  |
+| -------------------- | :------: | :------------: | :---------------: | :--------------------: |
+| Precision            | N/A      | 0.26           | 0.89              | **0.96**               |
+| Recall               | N/A      | 0.24           | 0.84              | **0.9**                |
+| F1                   | N/A      | 0.25           | 0.87              | **0.93**               |
+| mAP50-95             | N/A      | 0.069          | 0.747             | **0.758**              |
+| DM decode rate       | 0.1      | 0.04           | 0.1               | 0.1                    |
+| Valid DM decode rate | 0.1      | 0.04           | 0.1               | 0.1                    |
+| Total Runtime (s)*   | 136      | 24             | 27                | 34                     |
 
-| Measure              | Kaggle Scratch | Kaggle Finetuned  | Ultralytics Finetuned  |
-| -------------------- | :------------: | :---------------: | :--------------------: |
-| Precision            | 0.26           | 0.89              | **0.96**               |
-| Recall               | 0.24           | 0.84              | **0.9**                |
-| F1                   | 0.25           | 0.87              | **0.93**               |
-| mAP50-95             | 0.069          | 0.747             | **0.758**              |
-| DM decode rate       |                |                   |                        |
-| Valid DM decode rate |                |                   |                        |
+*Note that runtime was calculated as fair as reasonably possible (model pipeline stripped of other calculations). Reason for different model decode speeds is likely due to increased false positives on finetuned models. The baseline model is likely the slowest due to there being many more pixels in the image compared to the cropped images the models produce.
 
 # Week 5 - 31 October 2024
 
