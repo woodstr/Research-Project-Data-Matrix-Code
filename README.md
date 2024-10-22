@@ -137,8 +137,8 @@ Notes:
 - Kaggle Scratch fails to find 3 of the DM codes that other models find, leading to worse than baseline performance
 - Somehow better decode rate on laptop? Need to look into / test this further
 
-| | | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+| Baseline | Kaggle Scratch | Kaggle Finetuned | Ultralytics Finetuned |
+|:--------:|:--------------:|:----------------:|:---------------------:|
 |<img width="200" alt="Baseline" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/baseline.png">|<img width="200" alt="Kaggle Scratch" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Kaggle Scratch.png">|<img width="200" alt="Kaggle Finetuned" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Kaggle Finetuned.png">|<img width="200" alt="Ultralytics Finetuned" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Ultralytics Finetuned.png">|
 
 # Week 5 - 31 October 2024
