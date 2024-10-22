@@ -121,10 +121,10 @@ The outcome of this experiment will decide if we need to make any changes or if 
 ### Model Performances
 | Measure              | Baseline | Kaggle Scratch | Kaggle Finetuned  | Ultralytics Finetuned  |
 | -------------------- | :------: | :------------: | :---------------: | :--------------------: |
-| Precision            | N/A      | 0.26           | 0.89              | **0.96**               |
-| Recall               | N/A      | 0.24           | 0.84              | **0.9**                |
-| F1                   | N/A      | 0.25           | 0.87              | **0.93**               |
-| mAP50-95             | N/A      | 0.069          | 0.747             | **0.758**              |
+| Precision            | N/A      | 0.25           | 0.91              | **0.96**               |
+| Recall               | N/A      | 0.24           | 0.84              | **0.89**                |
+| F1                   | N/A      | 0.25           | 0.87              | **0.92**               |
+| mAP50-95             | N/A      | 0.069          | 0.746             | **0.753**              |
 | DM decode rate       | 0.12     | 0.04           | 0.12              | 0.12                   |
 | Valid DM decode rate | 0.12     | 0.04           | 0.12              | 0.12                   |
 | Total Runtime (s)    | 153      | 34             | 40                | 43                     |
