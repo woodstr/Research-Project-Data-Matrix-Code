@@ -125,15 +125,21 @@ The outcome of this experiment will decide if we need to make any changes or if 
 | Recall               | N/A      | 0.24           | 0.84              | **0.9**                |
 | F1                   | N/A      | 0.25           | 0.87              | **0.93**               |
 | mAP50-95             | N/A      | 0.069          | 0.747             | **0.758**              |
-| DM decode rate       | 0.1      | 0.04           | 0.1               | 0.1                    |
-| Valid DM decode rate | 0.1      | 0.04           | 0.1               | 0.1                    |
-| Total Runtime (s)    | 136      | 24             | 27                | 34                     |
+| DM decode rate       | 0.12     | 0.04           | 0.12              | 0.12                   |
+| Valid DM decode rate | 0.12     | 0.04           | 0.12              | 0.12                   |
+| Total Runtime (s)    | 153      | 34             | 40                | 43                     |
 
 Notes:
-- Runtime was calculated as fair as reasonably possible (model pipeline stripped of other calculations)
+- Runtime calculated on laptop
+- Runtime was calculated as fair as reasonably possible (model pipeline stripped of most unnecessary calculations)
 - Reason for different model decode speeds is likely due to increased false positives on finetuned models
 - Baseline model being the slowest is likely due to there being many more pixels in the image compared to the cropped images the models produce
 - Kaggle Scratch fails to find 3 of the DM codes that other models find, leading to worse than baseline performance
+- Somehow better decode rate on laptop? Need to look into / test this further
+
+| | | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="200" alt="Baseline" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/baseline.png">|<img width="200" alt="Kaggle Scratch" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Kaggle Scratch.png">|<img width="200" alt="Kaggle Finetuned" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Kaggle Finetuned.png">|<img width="200" alt="Ultralytics Finetuned" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Ultralytics Finetuned.png">|
 
 # Week 5 - 31 October 2024
 
