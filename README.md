@@ -133,7 +133,7 @@ Notes:
 - Runtime calculated on laptop
 - Runtime was calculated as fair as reasonably possible (model pipeline stripped of most unnecessary calculations)
 - Reason for different model decode speeds is likely due to increased false positives on finetuned models
-- Baseline model being the slowest is likely due to there being many more pixels in the image compared to the cropped images the models produce
+- Baseline model being the slowest is likely due to there being many more pixels in the image compared to the cropped and resized images the models produce
 - Kaggle Scratch fails to find 3 of the DM codes that other models find, leading to worse than baseline performance
 - Somehow better decode rate on laptop? Need to look into / test this further
 
