@@ -145,13 +145,26 @@ Notes:
 
 ## Goals
 
-### Feedback :x:
+### Minor Enhancement :on:
+Alter decoding pipeline to only crop and decode to bounding box with highest likelihood.
 
-Implementation of any changes based on feedback from previous weeks outcome.
+### Research :on:
+Check papers on rectification and image binarization. (Look for high citations, and prioritize image binarization).
 
-### Post-processing :x:
+There are some papers already doing both (Google "qr code binarization").
 
-Possibility to add any post-processing such as restoration techniques etc.
+Summarize them.
+
+### Statistics of Distortion MAN dataset :on:
+From the decoder outputs, make some statistics on the types of dmc's that succeed and fail. Steps:
+ - Run decoder to get failure cases
+ - Visually compare and try to find similarities in the failure cases compared to successful
+ - Which factors are important? Color? Distortion? Reflections?
+
+This is relevant for deciding which method to use in next experiment.
+
+Note for possible data synthesis:
+ - Ground truth = true positive, we want to synthesize the negative cases! This way we can train a model to convert the negative cases to positive.
 
 ## Outcome of Week
 
