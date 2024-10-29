@@ -170,7 +170,7 @@ Note for possible data synthesis:
 
 ## Outcome of Week
 
-### New Model Performances
+### Minorly Improved Model Performances
 | Measure              | Baseline | Kaggle Scratch | Kaggle Finetuned  | Ultralytics Finetuned  |
 | -------------------- | :------: | :------------: | :---------------: | :--------------------: |
 | Precision            | N/A      | 0.25           | 0.91              | **0.96**               |
@@ -179,12 +179,13 @@ Note for possible data synthesis:
 | mAP50-95             | N/A      | 0.069          | 0.746             | **0.753**              |
 | DM decode rate       | 0.12     | 0.04           | 0.12              | 0.12                   |
 | Valid DM decode rate | 0.12     | 0.04           | 0.12              | 0.12                   |
-| Total Runtime (s)    | 153      | 34             | 40                | 43                     |
+| Total Runtime (s)    | 173      | 25             | 40                | 31                     |
 
 Notes:
-- Runtime calculated on laptop
-- Minor changes in baseline due to random background processes.
-- Models perform faster by only decoding high confidence bounding box!
+- Tests run similar to previous.
+- Minor changes in baseline likely due to randomness in background processes.
+- Models perform faster than previous test by only decoding high confidence bounding box. Note that this is even with slower laptop performance.
+- "Ultralytics Finetuned" benefitted greater than "Kaggle Finetuned"
 
 # Week 7 - 14 November 2024
 
