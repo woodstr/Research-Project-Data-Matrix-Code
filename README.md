@@ -122,7 +122,7 @@ The outcome of this experiment will decide if we need to make any changes or if 
 | Measure              | Baseline | Kaggle Scratch | Kaggle Finetuned  | Ultralytics Finetuned  |
 | -------------------- | :------: | :------------: | :---------------: | :--------------------: |
 | Precision            | N/A      | 0.25           | 0.91              | **0.96**               |
-| Recall               | N/A      | 0.24           | 0.84              | **0.89**                |
+| Recall               | N/A      | 0.24           | 0.84              | **0.89**               |
 | F1                   | N/A      | 0.25           | 0.87              | **0.92**               |
 | mAP50-95             | N/A      | 0.069          | 0.746             | **0.753**              |
 | DM decode rate       | 0.12     | 0.04           | 0.12              | 0.12                   |
@@ -141,11 +141,13 @@ Notes:
 |:--------:|:--------------:|:----------------:|:---------------------:|
 |<img width="200" alt="Baseline" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/baseline.png">|<img width="200" alt="Kaggle Scratch" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Kaggle Scratch.png">|<img width="200" alt="Kaggle Finetuned" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Kaggle Finetuned.png">|<img width="200" alt="Ultralytics Finetuned" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/Ultralytics Finetuned.png">|
 
-# Week 5 - 31 October 2024
+# Week 5 - 31 October 2024 (backup used due to travelling)
+
+# Week 6 - 7 November 2024
 
 ## Goals
 
-### Minor Enhancement :on:
+### Minor Enhancement :heavy_check_mark:
 Alter decoding pipeline to only crop and decode to bounding box with highest likelihood.
 
 ### Research :on:
@@ -168,9 +170,24 @@ Note for possible data synthesis:
 
 ## Outcome of Week
 
-TBD
+### Minorly Improved Model Performances
+| Measure              | Baseline | Kaggle Scratch | Kaggle Finetuned  | Ultralytics Finetuned  |
+| -------------------- | :------: | :------------: | :---------------: | :--------------------: |
+| Precision            | N/A      | 0.25           | 0.91              | **0.96**               |
+| Recall               | N/A      | 0.24           | 0.84              | **0.89**               |
+| F1                   | N/A      | 0.25           | 0.87              | **0.92**               |
+| mAP50-95             | N/A      | 0.069          | 0.746             | **0.753**              |
+| DM decode rate       | 0.12     | 0.04           | 0.12              | 0.12                   |
+| Valid DM decode rate | 0.12     | 0.04           | 0.12              | 0.12                   |
+| Total Runtime (s)    | 173      | 25             | 40                | 31                     |
 
-# Week 6 - 7 November 2024
+Notes:
+- Tests run similar to previous.
+- Minor changes in baseline likely due to randomness in background processes.
+- Models perform faster than previous test by only decoding high confidence bounding box. Note that this is even with slower laptop performance.
+- "Ultralytics Finetuned" benefitted greater than "Kaggle Finetuned"
+
+# Week 7 - 14 November 2024
 
 ## Goals
 
@@ -182,23 +199,13 @@ This week will focus on performing the second experiment with any new models / a
 
 TBD
 
-# Week 7 - 14 November 2024
+# Week 8 - 21 November 2024
 
 ## Goals
 
 ### Report Writing :x:
 
 Bulk writing of report.
-
-## Outcome of Week
-
-TBD
-
-# Week 8 (Backup) - 21 November 2024
-
-## Goals
-
-TBD
 
 ## Outcome of Week
 
@@ -220,7 +227,7 @@ TBD
 
 ## Goals
 
-
+Report Writing.
 
 ## Outcome of Week
 
