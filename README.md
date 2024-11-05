@@ -157,7 +157,7 @@ There are some papers already doing both (Google "qr code binarization").
 
 Summarize them.
 
-### Statistics of Distortion MAN dataset :on:
+### Statistics of Distortion MAN dataset :heavy_check_mark:
 From the decoder outputs, make some statistics on the types of dmc's that succeed and fail. Steps:
  - Run decoder to get failure cases
  - Visually compare and try to find similarities in the failure cases compared to successful
@@ -186,6 +186,12 @@ Notes:
 - Minor changes in baseline likely due to randomness in background processes.
 - Models perform faster than previous test by only decoding high confidence bounding box. Note that this is even with slower laptop performance.
 - "Ultralytics Finetuned" benefitted greater than "Kaggle Finetuned"
+
+### Statistics of Distortion MAN dataset
+Relevant statistics of failure cases of baseline decoder shown below.
+| Most common color combinations (front/back) | Lazer vs. Dot | Types of Distortions |
+| :-----------------------------------------: | :-----------: | :------------------: |
+|<img width="500" alt="Color Combo" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_color_combo.png">|<img width="500" alt="Lazer vs. Dot" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_lazer_dot.png">|<img width="500" alt="Distortion Types" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_malformation_types.png">|
 
 # Week 7 - 14 November 2024
 
