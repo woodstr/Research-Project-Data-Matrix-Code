@@ -192,6 +192,7 @@ Relevant statistics of failure cases of baseline decoder shown below.
 | Most common color combinations (front/back) | Lazer vs. Dot | Types of Distortions |
 | :-----------------------------------------: | :-----------: | :------------------: |
 |<img width="500" alt="Color Combo" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_color_combo.png">|<img width="500" alt="Lazer vs. Dot" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_lazer_dot.png">|<img width="500" alt="Distortion Types" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_malformation_types.png">|
+
 Note on success cases:
 - Either black on metal or white on green
 - All lazer
