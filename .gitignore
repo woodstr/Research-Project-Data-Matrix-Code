@@ -19,3 +19,7 @@ data/MAN
 
 # cropped images
 data/cropped
+
+# stats images
+data/stats/failures/baseline/*
+data/stats/successes/baseline/*

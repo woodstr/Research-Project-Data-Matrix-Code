@@ -1,0 +1,51 @@
+Case,Code Color,Background Color,Type,distortions
+success,white,green,lazer,
+success,white,green,lazer,
+success,black,metal,lazer,
+success,black,metal,lazer,
+success,black,white,lazer,
+failure,black,metal,lazer,squish
+failure,white,metal,dot,blur;small
+failure,white,metal,dot,contrast change;dot malformation
+failure,white,metal,dot,dotted
+failure,white,metal,dot,dot malformation;small
+failure,white,metal,dot,contrast change;small
+failure,white,metal,dot,motion blur;cover
+failure,white,metal,dot,dot malformation;cover
+failure,white,metal,dot,dot malformation
+failure,white,metal,dot,dot malformation
+failure,white,metal,dot,dot malformation;blue;contrast change
+failure,black,metal,lazer,blur
+failure,black,white,lazer,squish
+failure,black,white,lazer,squish;contrast change
+failure,white,metal,dot,dot malformation
+failure,metal,metal,dot,ring
+failure,white,metal,dot,blur;dot malformation
+failure,white,metal,dot,blur
+failure,white,metal,dot,dot malformation;cover
+failure,black,metal,dot,dot malformation;contrast change
+failure,white,metal,dot,squish
+failure,black,metal,dot,dot malformation
+failure,white,metal,dot,blur;small;dot malformation
+failure,white,metal,dot,blur;dot malformation
+failure,white,metal,dot,contrast change;dot malformation
+failure,black,metal,dot,small;blur;dot malformation
+failure,black,metal,dot,small;blur;dot malformation
+failure,white,metal,dot,blur;dot malformation
+failure,white,metal,dot,blur;dot malformation
+failure,white,metal,dot,blur;dot malformation
+failure,white,metal,dot,small;dot malformation
+failure,white,metal,dot,blur;small;dot malformation
+failure,black,metal,lazer,small;contrast change
+failure,white,metal,dot,blur;small;dot malformation
+failure,white,metal,dot,small;dot malformation
+failure,white,metal,dot,squish;dot malformation
+failure,white,metal,dot,blur;small
+failure,white,metal,dot,blur;small;contrast change
+failure,white,metal,dot,cover;blur
+failure,white,metal,dot,blur;contrast change
+failure,white,metal,dot,blur;dot malformation
+failure,black,metal,lazer,small;blur
+failure,black,white,lazer,squish;blur
+failure,black,white,lazer,squish;blur
+failure,black,white,lazer,squish;blur
