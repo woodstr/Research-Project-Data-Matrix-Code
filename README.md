@@ -198,6 +198,10 @@ Image binarization should greatly reduce high contrast change (9 images) and pos
 | Adaptive Binarization of QR Code Images for Fast Automatic Sorting in Warehouse Systems | 33        | [link](https://www.mdpi.com/1424-8220/19/24/5466/pdf) |
 | Fast Adaptive Binarization of QR Code Images for Automatic Sorting in Logistics Systems | 4         | [link](https://www.mdpi.com/2079-9292/12/2/286/pdf)   |
 
+Image binarization is the process of converting pixel values to either black or white. This could be very useful for DMC detection as it could isolate the pixel values containing the DMC from other irrelevent pixel values, potentially increasing the performance of the baseline decoder.
+
+Both papers relate to each other (one builds on the other), and the code is not available, so this method may prove hard to use. However the method runs very fast (0.04s / 25 FPS) and seems to perform very well for improving QR code decode rates.
+
 #### Blur Removal Methods
 Focusing on blur removing methods could greatly reduce the problem of blur present in 22/50 of the test dataset.
 
@@ -205,6 +209,12 @@ Focusing on blur removing methods could greatly reduce the problem of blur prese
 | ---------------------------------------------------------------- | :-------: | :-------------------------------------------------------------: |
 | Fast Blur Removal for Wearable QR Code Scanners                  | 26        | [link](https://files.ait.ethz.ch/projects/quick-qr/quickQR.pdf) |
 | DeblurGAN-v2: Deblurring (Orders-of-Magnitude) Faster and Better | 1086      | [link](https://arxiv.org/pdf/1908.03826)                        |
+
+Blur removal methods seem to typically involve using models to try and estimate how to de-blur an image. The main theory behind it is that since algorithms can blur images, they can also be used to deblure images. However because of noise in real images, you need to estimate the deblurring. Models can be used to estimate the best methods for deblurring a given image. The above two papers cover such models.
+
+The fast blur removal method combines a few seemlingly very specific methods together, and there is no code publicly available, so I do not favor this option.
+
+"DeblurGAN-v2 is based on a relativistic conditional GAN with a doublescale discriminator". More on it in the proposal below.
 
 #### Proposal
 I propose going primarily with the DeblurGAN-v2 paper/model. Reasons:
