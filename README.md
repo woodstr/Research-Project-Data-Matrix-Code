@@ -150,7 +150,7 @@ Notes:
 ### Minor Enhancement :heavy_check_mark:
 Alter decoding pipeline to only crop and decode to bounding box with highest likelihood.
 
-### Research :on:
+### Research :heavy_check_mark:
 Check papers on rectification and image binarization. (Look for high citations, and prioritize image binarization).
 
 There are some papers already doing both (Google "qr code binarization").
@@ -186,6 +186,34 @@ Notes:
 - Minor changes in baseline likely due to randomness in background processes.
 - Models perform faster than previous test by only decoding high confidence bounding box. Note that this is even with slower laptop performance.
 - "Ultralytics Finetuned" benefitted greater than "Kaggle Finetuned"
+
+### Research
+Here I've listed options good for different reasons
+
+#### Image Binarization
+Image binarization should greatly reduce high contrast change (9 images) and possibly cover and blur (23+ images).
+
+| Title                                                                                   | Citations | Link                                                  |
+| --------------------------------------------------------------------------------------- | :-------: | :---------------------------------------------------: |
+| Adaptive Binarization of QR Code Images for Fast Automatic Sorting in Warehouse Systems | 33        | [link](https://www.mdpi.com/1424-8220/19/24/5466/pdf) |
+| Fast Adaptive Binarization of QR Code Images for Automatic Sorting in Logistics Systems | 4         | [link](https://www.mdpi.com/2079-9292/12/2/286/pdf)   |
+
+#### Blur Removal Methods
+Focusing on blur removing methods could greatly reduce the problem of blur present in 22/50 of the test dataset.
+
+| Title                                                            | Citations | link                                                            |
+| ---------------------------------------------------------------- | :-------: | :-------------------------------------------------------------: |
+| Fast Blur Removal for Wearable QR Code Scanners                  | 26        | [link](https://files.ait.ethz.ch/projects/quick-qr/quickQR.pdf) |
+| DeblurGAN-v2: Deblurring (Orders-of-Magnitude) Faster and Better | 1086      | [link](https://arxiv.org/pdf/1908.03826)                        |
+
+#### Proposal
+I propose going primarily with the DeblurGAN-v2 paper/model. Reasons:
+- [The code is freely available](https://github.com/VITA-Group/DeblurGANv2?tab=readme-ov-file)
+- The model performs at real-time speed (0.06s / ~17FPS)
+- From my human perspective the model seems to deblur [pretty well](https://raw.githubusercontent.com/VITA-Group/DeblurGANv2/refs/heads/master/doc_images/restore_visual.png). [Extra example](https://github.com/VITA-Group/DeblurGANv2/blob/master/doc_images/kohler_visual.png).
+- A [paper](https://arxiv.org/pdf/2109.03379) used a [similar model](https://github.com/York-SDCNLab/Ghost-DeblurGAN?tab=readme-ov-file) for [detecting a different kind of code](https://user-images.githubusercontent.com/58899542/154817295-22e733a5-5f33-439d-a29e-08f5950a8784.gif).
+
+[DeblurGAN-v2 architecture](https://raw.githubusercontent.com/VITA-Group/DeblurGANv2/refs/heads/master/doc_images/pipeline.jpg).
 
 ### Statistics of Distortion MAN dataset
 Relevant statistics of failure cases of baseline decoder shown below.
