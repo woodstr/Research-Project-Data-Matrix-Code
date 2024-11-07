@@ -150,13 +150,6 @@ Notes:
 ### Minor Enhancement :heavy_check_mark:
 Alter decoding pipeline to only crop and decode to bounding box with highest likelihood.
 
-### Research :heavy_check_mark:
-Check papers on rectification and image binarization. (Look for high citations, and prioritize image binarization).
-
-There are some papers already doing both (Google "qr code binarization").
-
-Summarize them.
-
 ### Statistics of Distortion MAN dataset :heavy_check_mark:
 From the decoder outputs, make some statistics on the types of dmc's that succeed and fail. Steps:
  - Run decoder to get failure cases
@@ -167,6 +160,13 @@ This is relevant for deciding which method to use in next experiment.
 
 Note for possible data synthesis:
  - Ground truth = true positive, we want to synthesize the negative cases! This way we can train a model to convert the negative cases to positive.
+
+### Research :heavy_check_mark:
+Check papers on rectification and image binarization. (Look for high citations, and prioritize image binarization).
+
+There are some papers already doing both (Google "qr code binarization").
+
+Summarize them.
 
 ## Outcome of Week
 
