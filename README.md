@@ -187,6 +187,21 @@ Notes:
 - Models perform faster than previous test by only decoding high confidence bounding box. Note that this is even with slower laptop performance.
 - "Ultralytics Finetuned" benefitted greater than "Kaggle Finetuned"
 
+### Statistics of Distortion MAN dataset
+Relevant statistics of failure cases of baseline decoder shown below.
+| Most common color combinations (front/back) | Lazer vs. Dot | Types of Distortions |
+| :-----------------------------------------: | :-----------: | :------------------: |
+|<img width="500" alt="Color Combo" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_color_combo.png">|<img width="500" alt="Lazer vs. Dot" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_lazer_dot.png">|<img width="500" alt="Distortion Types" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_malformation_types.png">|
+
+Note on success cases:
+- Either black on metal or white on green
+- All lazer
+- Minor blur
+- Some are small
+- One example with high contrast change is decoded
+
+Conclusion: dot malformation and blur are the main factors for failure. Focus on either of these could produce much better results.
+
 ### Research
 Here I've listed options good for different reasons
 
@@ -224,21 +239,6 @@ I propose going primarily with the DeblurGAN-v2 paper/model. Reasons:
 - A [paper](https://arxiv.org/pdf/2109.03379) used a [similar model](https://github.com/York-SDCNLab/Ghost-DeblurGAN?tab=readme-ov-file) for [detecting a different kind of code](https://user-images.githubusercontent.com/58899542/154817295-22e733a5-5f33-439d-a29e-08f5950a8784.gif).
 
 [DeblurGAN-v2 architecture](https://raw.githubusercontent.com/VITA-Group/DeblurGANv2/refs/heads/master/doc_images/pipeline.jpg).
-
-### Statistics of Distortion MAN dataset
-Relevant statistics of failure cases of baseline decoder shown below.
-| Most common color combinations (front/back) | Lazer vs. Dot | Types of Distortions |
-| :-----------------------------------------: | :-----------: | :------------------: |
-|<img width="500" alt="Color Combo" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_color_combo.png">|<img width="500" alt="Lazer vs. Dot" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_lazer_dot.png">|<img width="500" alt="Distortion Types" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/stats_malformation_types.png">|
-
-Note on success cases:
-- Either black on metal or white on green
-- All lazer
-- Minor blur
-- Some are small
-- One example with high contrast change is decoded
-
-Conclusion: dot malformation and blur are the main factors for failure. Perhaps focus on reducing dot malformation and squish can give achievable results.
 
 # Week 7 - 14 November 2024
 
