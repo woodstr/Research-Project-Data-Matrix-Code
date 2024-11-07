@@ -240,13 +240,58 @@ I propose going primarily with the DeblurGAN-v2 paper/model. Reasons:
 
 [DeblurGAN-v2 architecture](https://raw.githubusercontent.com/VITA-Group/DeblurGANv2/refs/heads/master/doc_images/pipeline.jpg).
 
+#### Actual Decision
+Final decision for step 2 is very different than proposal!
+
+Main idea: train a simple image binarizer on a synthesized dataset. More details on process in next weeks plan.
+
 # Week 7 - 14 November 2024
 
 ## Goals
 
-### Experiment 2 :x:
+### Experiment 2 :on:
 
-This week will focus on performing the second experiment with any new models / additions to the previous pipeline.
+This week will focus on getting step 2 of the overall process done: an image binarizer.
+
+#### Image Binarizer :on:
+By training an image binarizer we can reduce many issues prevalent in the real-world images. Issues such as:
+- blur
+- contrast difference
+- other color related issues
+
+Notes:
+- Issues relating to dot-markings will be ignored for the paper, and be reserved for future MSc. project.
+- Issues relating to rectification will be ignored on the basis that the baseline decoder has it's own rectification methods, which may be sufficient if we remove the other issues.
+- Will consider finding a small pretrained resnet-18 model for finetuning on a dataset. If impossible train from scratch.
+- May have to customize last layer, it should not have a classification head but be a 1 channel binary map with range of 0-1.
+  - Last layer of e.g. sigmoid function can squeeze to 0-1.
+
+#### Dataset Synthesis :on:
+In order to train an image binarizer we need to have an appropriate dataset. By generating DM codes and blending onto metal backgrounds with different augmentations, we may be able to train a binarizer to effectively reduce much of the noise present in the real-world pictures and improve the decode-rate of the baseline decoder.
+
+The proposed steps for generating a dataset is as follows:
+1. Generate list of random strings to encode
+2. Generate DMCs from strings
+3. Apply shape transformations to DMCs (affine, rotation, flip, crop, ...)
+   - Save for later
+4. Scale DMCs randomly between 0-1
+5. Select random crops of random metal textures
+6. Blend DMCs to texture crops (multiply scaled DMCs with backgrounds)
+   - Stamp saved shape-transformed DMCs onto white background of same size as texture crops for use as ground truths
+7. Apply color transformations to blended images (color jitter, contrast, ...)
+
+The steps should effectively give us a dataset with two different groups of images:
+1. **Ground truth images**. These are the images that we want to the image binarizer to create (black DMC on white background). Image binarizers are effective at removing certain distortions like color and blur, which is why the ground truth images still contain shape distortions.
+2. **Synthesized images**. These are the images that we wish to teach the binarizer to transform. They should be similar to the real-world images, and the model should learn how transform them into the ground truth images.
+
+Tips for later:
+- [pylibdmtx](https://pypi.org/project/pylibdmtx/) can do DMC generation
+- Relevant metal textures can be found [online](https://www.google.com/search?q=machined+metal+texture).
+  - Textures with different areas could be good when combined with the random cropping.
+- For transformations, [pytorch has many methods](https://pytorch.org/vision/main/transforms.html#v2-api-reference-recommended) that can be used.
+- Ensure to define the two groups of transformations well in paper! (e.g. shape transformation is consistent from input-output but color transformation not)
+- Ensure input/output sizes are the same! Output of step 1 has a specific shape so use that.
+- DO NOT RETRAIN STEP 1 ON NEW DATA! It does not reduce decode-rate, so we can safely assume it performs well. Later on if time allows consider retraining, as having less training data sources simplifies the code.
 
 ## Outcome of Week
 
