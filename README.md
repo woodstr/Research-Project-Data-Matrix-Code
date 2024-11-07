@@ -2,7 +2,7 @@
 * [Week 2](#week-2---10-october-2024)
 * Week 3 (October Break)
 * [Week 4](#week-4---24-october-2024)
-* [Week 5](#week-5---31-october-2024-(backup-used-due-to-travelling))
+* [Week 5](#week-5---31-october-2024-backup-used-due-to-travelling)
 * [Week 6](#week-6---7-november-2024)
 * [Week 7](#week-7---14-november-2024)
 * [Week 8](#week-8---21-november-2024)
