@@ -266,7 +266,7 @@ Notes:
 - May have to customize last layer, it should not have a classification head but be a 1 channel binary map with range of 0-1.
   - Last layer of e.g. sigmoid function can squeeze to 0-1.
 
-#### Dataset Synthesis :on:
+#### Dataset Synthesis :heavy_check_mark:
 In order to train an image binarizer we need to have an appropriate dataset. By generating DM codes and blending onto metal backgrounds with different augmentations, we may be able to train a binarizer to effectively reduce much of the noise present in the real-world pictures and improve the decode-rate of the baseline decoder.
 
 The proposed steps for generating a dataset is as follows:
