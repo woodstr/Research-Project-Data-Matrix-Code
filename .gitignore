@@ -23,3 +23,7 @@ data/cropped
 # stats images
 data/stats/failures/baseline/*
 data/stats/successes/baseline/*
+
+# synthesized dataset
+data/synth_data/ground_truth/*
+data/synth_data/noisy/*
