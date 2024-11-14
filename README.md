@@ -315,9 +315,44 @@ The Image Binarizer structure is set up, but it needs to be further debugged and
 
 ## Goals
 
-### Report Writing :x:
+### New Step 2 Method :on:
+Instead of ResNet method, will try the following options:
+#### Histogram Analysis :on:
+From the output of YOLO models, I can produce histograms of the images (grayscale value on x-axis and count on y).
 
-Bulk writing of report.
+I can create figures of all MAN test images side by side with their histogram plots.
+
+From manually inspecting all of these figures, I can see if I am very lucky and there is a common threshold to use for binarizing all of the images.
+
+If a common threshold exists, the second step can be this binarization process, and the baseline decoder can run on both sides of the binarization.
+
+#### Prerequisites for Later Methods :on:
+Later methods require the following fixes:
+- Fix pipeline to use YOLO cropped images
+- Fix blending method used in data synthesis to use multiplication method. Different values of blackness for the DMC can be used to have the blended image have a darker or more faded DMC
+  - Ensure there are no ultra faded DMCs this time, as they do not represent real-world data 
+
+#### U-Net :on:
+Instead of using ResNet, use U-Net to predict DMC pixels apart from background pixels:
+
+Apply Z-Score normalization (either across all 3 channels if RGB or 1 channel if grayscale)
+
+Try with and without Z-Score...
+
+#### U-Net with Histogram :on:
+If the above U-Net performs poorly, remove Z-Score and calculate threshold instead.
+
+The mask from U-Net output can be used to find the DMC pixel areas from the OG image. With those pixels from the OG image, we can create a histogram of it to calculate a threshold to use for binarization.
+
+#### Predicting Threshold :on:
+If all else fails, try this hail mary.
+
+Return to using ResNet, but add a small CNN head instead, with the purpose of predicting the threshold to use in binarization using the output of ResNet as input.
+
+This relies on there being valid thresholds to use, but may work well.
+
+#### IF ALL ELSE FAILS
+If all else fails I can return to original ResNet. Maybe the fixes will improve it 🥲. Can also try tweaking values and calculating weight for BCE loss to deal with imbalance in class labels.
 
 ## Outcome of Week
 
@@ -328,6 +363,8 @@ TBD
 ## Goals
 
 ### Initial Report Due :x:
+
+Bulk writing of report.
 
 Veronika will be reading research paper reports on 5th December. Submit initial version of report before then so that she can read and give feedback.
 
