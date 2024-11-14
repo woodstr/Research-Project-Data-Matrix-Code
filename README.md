@@ -305,7 +305,7 @@ Synthesized 10,000 noisy and ground truth image pairs according to specs, some e
 | Ground Truth | <img width="500" alt="ground_truth_0" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/ground_truth_0.png"> | <img width="500" alt="ground_truth_1" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/ground_truth_1.png"> | <img width="500" alt="ground_truth_2" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/ground_truth_2.png"> |
 
 #### Image Binarizer
-The Image Binarizer structure is set up, but it needs to be further debugged and tweaked to improve its results. Currently removes all noise completely and shows a gray blob where the DMC is.
+The Image Binarizer structure is set up, but it needs to be further debugged and tweaked to improve its results. Currently removes all noise completely and shows a black blob where the DMC is.
 
 | Noisy (ResNet Normalized) | Ground Truth | Predicted |
 | :-----------------------: | :----------: | :-------: |
