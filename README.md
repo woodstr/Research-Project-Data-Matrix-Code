@@ -329,7 +329,8 @@ If a common threshold exists, the second step can be this binarization process, 
 #### Prerequisites for Later Methods :on:
 Later methods require the following fixes:
 - Fix pipeline to use YOLO cropped images
-- Fix blending method used in data synthesis to use multiplication method. Different values of blackness for the DMC can be used to have the blended image have a darker or more faded DMC.
+- Fix blending method used in data synthesis to use multiplication method. Different values of blackness for the DMC can be used to have the blended image have a darker or more faded DMC
+  - Ensure there are no ultra faded DMCs this time, as they do not represent real-world data 
 
 #### U-Net :on:
 Instead of using ResNet, use U-Net to predict DMC pixels apart from background pixels:
