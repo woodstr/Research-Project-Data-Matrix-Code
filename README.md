@@ -249,11 +249,11 @@ Main idea: train a simple image binarizer on a synthesized dataset. More details
 
 ## Goals
 
-### Experiment 2 :on:
+### Experiment 2 :heavy_exclamation_mark:
 
 This week will focus on getting step 2 of the overall process done: an image binarizer.
 
-#### Image Binarizer :on:
+#### Image Binarizer :heavy_exclamation_mark:
 By training an image binarizer we can reduce many issues prevalent in the real-world images. Issues such as:
 - blur
 - contrast difference
@@ -295,7 +295,21 @@ Tips for later:
 
 ## Outcome of Week
 
-TBD
+#### Dataset Synthesis
+
+Synthesized 10,000 noisy and ground truth image pairs according to specs, some examples below.
+
+|              | Example 1 | Example 2 | Example 3 |
+| :----------: | :-------: | :-------: | :-------: |
+| Noisy        | <img width="500" alt="noisy_0" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/noisy_0.png"> | <img width="500" alt="noisy_1" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/noisy_1.png"> | <img width="500" alt="noisy_2" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/noisy_2.png"> |
+| Ground Truth | <img width="500" alt="ground_truth_0" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/ground_truth_0.png"> | <img width="500" alt="ground_truth_1" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/ground_truth_1.png"> | <img width="500" alt="ground_truth_2" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/ground_truth_2.png"> |
+
+#### Image Binarizer
+The Image Binarizer structure is set up, but it needs to be further debugged and tweaked to improve its results. Currently removes all noise completely and shows a gray blob where the DMC is.
+
+| Noisy (ResNet Normalized) | Ground Truth | Predicted |
+| :-----------------------: | :----------: | :-------: |
+| <img width="500" alt="failure_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/failure_noisy.png"> | <img width="500" alt="failure_ground_truth" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/failure_ground_truth.png"> | <img width="500" alt="failure_prediction" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/failure_prediction.png"> |
 
 # Week 8 - 21 November 2024
 
