@@ -326,7 +326,7 @@ From manually inspecting all of these figures, I can see if I am very lucky and 
 
 If a common threshold exists, the second step can be this binarization process, and the baseline decoder can run on both sides of the binarization.
 
-#### Prerequisites for Later Methods :on:
+#### Prerequisites for Later Methods :heavy_check_mark:
 Later methods require the following fixes:
 - Fix pipeline to use YOLO cropped images
 - Fix blending method used in data synthesis to use multiplication method. Different values of blackness for the DMC can be used to have the blended image have a darker or more faded DMC
