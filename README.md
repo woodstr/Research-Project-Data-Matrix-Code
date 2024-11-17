@@ -317,7 +317,7 @@ The Image Binarizer structure is set up, but it needs to be further debugged and
 
 ### New Step 2 Method :on:
 Instead of ResNet method, will try the following options:
-#### Histogram Analysis :on:
+#### Histogram Analysis :heavy_check_mark:
 From the output of YOLO models, I can produce histograms of the images (grayscale value on x-axis and count on y).
 
 I can create figures of all MAN test images side by side with their histogram plots.
@@ -356,7 +356,17 @@ If all else fails I can return to original ResNet. Maybe the fixes will improve 
 
 ## Outcome of Week
 
-TBD
+### Histogram Analysis
+Initial analysis of histogram analysis shows that many images do have two peaks of grayscale values, where binarizing with a threshold in between effectively binarizes the image. However, while there are common thresholds for different groups of images, there is no global common threshold.
+
+Binarizing with Otsu's method (a method that calculates the threshold of a given image), does effectively binarize most of the images. However, noisy images (blurry, high contrast), still fail to be decoded. It seems that these noise factors need to be reduced, and pure binarization is not an effective method for increasing decode rate. Examples below.
+
+| success | failure |
+| :-----: | :-----: |
+| <img width="500" alt="success_0" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/histogram_binarization/success_0.png"> | <img width="500" alt="failure_0" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/histogram_binarization/failure_0.png"> |
+| <img width="500" alt="success_1" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/histogram_binarization/success_1.png"> | <img width="500" alt="failure_1" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/histogram_binarization/failure_1.png"> |
+
+Not that my default phone camera can decode many of the images when I point it at my computer screen. Perhaps the baseline decoder performs very poorly itself, and a method that optimizes for the decoder would be preferable.
 
 # Week 9 - 28 November 2024
 
