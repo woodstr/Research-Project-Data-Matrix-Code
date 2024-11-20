@@ -332,26 +332,26 @@ Later methods require the following fixes:
 - Fix blending method used in data synthesis to use multiplication method. Different values of blackness for the DMC can be used to have the blended image have a darker or more faded DMC
   - Ensure there are no ultra faded DMCs this time, as they do not represent real-world data 
 
-#### U-Net :on:
+#### U-Net
 Instead of using ResNet, use U-Net to predict DMC pixels apart from background pixels:
 
 Apply Z-Score normalization (either across all 3 channels if RGB or 1 channel if grayscale)
 
 Try with and without Z-Score...
 
-#### U-Net with Histogram :on:
+#### U-Net with Histogram
 If the above U-Net performs poorly, remove Z-Score and calculate threshold instead.
 
 The mask from U-Net output can be used to find the DMC pixel areas from the OG image. With those pixels from the OG image, we can create a histogram of it to calculate a threshold to use for binarization.
 
-#### Predicting Threshold :on:
+#### Predicting Threshold
 If all else fails, try this hail mary.
 
 Return to using ResNet, but add a small CNN head instead, with the purpose of predicting the threshold to use in binarization using the output of ResNet as input.
 
 This relies on there being valid thresholds to use, but may work well.
 
-#### IF ALL ELSE FAILS
+#### IF ALL ELSE FAILS :heavy_check_mark:
 If all else fails I can return to original ResNet. Maybe the fixes will improve it 🥲. Can also try tweaking values and calculating weight for BCE loss to deal with imbalance in class labels.
 
 ## Outcome of Week
@@ -367,6 +367,19 @@ Binarizing with Otsu's method (a method that calculates the threshold of a given
 | <img width="500" alt="success_1" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/histogram_binarization/success_1.png"> | <img width="500" alt="failure_1" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/histogram_binarization/failure_1.png"> |
 
 Not that my default phone camera can decode many of the images when I point it at my computer screen. Perhaps the baseline decoder performs very poorly itself, and a method that optimizes for the decoder would be preferable.
+
+Using Otsu's method gave the same decode rate as baseline, 0.12.
+
+### Return to ResNet
+I decided on returning to ResNet instead of exploring U-Net, as some minor fixes led to a model able to create some binarized images that could be decoded:
+
+| Example 1 | Example 2 | Example 3 |
+| :-------: | :-------: | :-------: |
+| <img width="500" alt="decodable_0" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/decodable_0.png"> | <img width="500" alt="decodable_1" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/decodable_1.png"> | <img width="500" alt="decodable_2" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/binarization/decodable_2.png"> |
+
+However, these results were not easily reproduceable. I believe I added too much variance to the data synthesis, to where the images are no longer representative of real-world data. Redoing the synthesis and trying again is an option, but the Otsu binarization gave more robust results.
+
+Using ResNet gave a worse decode rate, 0.6.
 
 # Week 9 - 28 November 2024
 
