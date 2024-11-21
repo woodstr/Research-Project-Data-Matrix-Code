@@ -315,7 +315,7 @@ The Image Binarizer structure is set up, but it needs to be further debugged and
 
 ## Goals
 
-### New Step 2 Method :on:
+### New Step 2 Method :heavy_exclamation_mark:
 Instead of ResNet method, will try the following options:
 #### Histogram Analysis :heavy_check_mark:
 From the output of YOLO models, I can produce histograms of the images (grayscale value on x-axis and count on y).
