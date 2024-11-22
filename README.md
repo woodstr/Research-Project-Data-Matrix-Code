@@ -7,7 +7,7 @@
 * [Week 7](#week-7---14-november-2024)
 * [Week 8](#week-8---21-november-2024)
 * [Week 9](#week-9---28-november-2024)
-* [Week 10](#week-10-backup---5-december-2024)
+* [Week 10](#week-10---5-december-2024)
 * [Week 11](#week-11---12-december-2024)
 
 # Week 1 - 3 October 2024
@@ -409,7 +409,7 @@ Veronika will be reading research paper reports on 5th December. Start writing a
 
 TBD
 
-# Week 10 (Backup) - 5 December 2024
+# Week 10 - 5 December 2024
 
 ## Goals
 
