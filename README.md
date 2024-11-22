@@ -389,7 +389,7 @@ Using ResNet gave a worse decode rate, 0.6.
 
 Yucheng has spotted mistakes I have made in the code. This final week will be spent with rewrites and fixes based on his advice.
 
-#### More Textures :on:
+#### More Textures :heavy_check_mark:
 
 I should get around 50-100 different metal textures as backgrounds for the DMCs.
 
@@ -405,7 +405,9 @@ Veronika will be reading research paper reports on 5th December. Start writing a
 
 ## Outcome of Week
 
-TBD
+### More Textures
+
+Spent a couple hours getting free metal textures. Now have 55.
 
 # Week 10 - 5 December 2024
 
