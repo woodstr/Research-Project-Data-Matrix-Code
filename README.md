@@ -413,6 +413,11 @@ TBD
 
 Report Writing.
 
+Self reminder to add credits to websites for metal textures:
+- <a href="https://www.vecteezy.com/free-vector/metal-texture">Metal Texture Vectors by Vecteezy</a>
+- <a href="https://www.textures4photoshop.com/">Textures 4 Photoshop</a>
+- <a href="https://www.freepik.com/free-photos-vectors/metal-texture">freepik</a>
+
 ## Outcome of Week
 
 
