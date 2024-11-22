@@ -385,11 +385,25 @@ Using ResNet gave a worse decode rate, 0.6.
 
 ## Goals
 
-### Initial Report Due :x:
+### Final coding :on:
 
-Bulk writing of report.
+Yucheng has spotted mistakes I have made in the code. This final week will be spent with rewrites and fixes based on his advice.
 
-Veronika will be reading research paper reports on 5th December. Submit initial version of report before then so that she can read and give feedback.
+#### More Textures :on:
+
+I should get around 50-100 different metal textures as backgrounds for the DMCs.
+
+#### Code fixes :on:
+- Don't normalize images at any stages
+- Early stopping based on validation, not training!
+- Change augmentation based on notes
+- Swap from ResNet to U-Net
+
+### Initial Report Writing :on:
+
+Initial writing of report.
+
+Veronika will be reading research paper reports on 5th December. Start writing and be sure to submit before then.
 
 ## Outcome of Week
 
