@@ -407,7 +407,7 @@ Veronika will be reading research paper reports on 5th December. Start writing a
 
 ### More Textures
 
-Spent a couple hours getting free metal textures. Now have 55.
+Spent a couple hours getting free metal textures. Now have 53.
 
 # Week 10 - 5 December 2024
 
