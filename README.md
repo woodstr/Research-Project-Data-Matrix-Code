@@ -401,8 +401,6 @@ I should get around 50-100 different metal textures as backgrounds for the DMCs.
 
 ### Initial Report Writing :on:
 
-Initial writing of report.
-
 Veronika will be reading research paper reports on 5th December. Start writing and be sure to submit before then.
 
 ## Outcome of Week
