@@ -433,6 +433,7 @@ Below is a final Table of performance of decode rates.
 
 Notes:
 - Experiment done on laptop cpu.
+- Baseline altered from previous experiments. Now has a limit of 1s for decoding and only looks for 1 DMC.
 - YOLO gives the best speed, without sacrificing decode rate.
 - While YOLO + Binarizer brings a better decode rate (over baseline!), it slows down performance to less than real-time. (~3s to process each image)
 
