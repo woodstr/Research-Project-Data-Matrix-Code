@@ -426,10 +426,15 @@ Below is a Table showing YOLO crops and the binarized image from successful deco
 
 Below is a final Table of performance of decode rates.
 
-| Measure              | Baseline | YOLO | YOLO + Binarizer |
-| -------------------- | :------: | :--: | :--------------: |
-| Valid DM decode rate | 0.12     | 0.12 | 0.18             |
-| Total Runtime (s)    | TBD      | TBD  | TBD              |
+| Measure              | Baseline | YOLO   | YOLO + Binarizer |
+| -------------------- | :------: | :----: | :--------------: |
+| Valid DM decode rate | 0.12     | 0.12   | **0.18**         |
+| Total Runtime (s)    | 46       | **27** | 148              |
+
+Notes:
+- Experiment done on laptop cpu.
+- YOLO gives the best speed, without sacrificing decode rate.
+- While YOLO + Binarizer brings a better decode rate (over baseline!), it slows down performance to less than real-time. (~3s to process each image)
 
 # Week 10 - 5 December 2024
 
