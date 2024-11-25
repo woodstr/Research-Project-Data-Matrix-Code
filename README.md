@@ -400,14 +400,36 @@ I should get around 50-100 different metal textures as backgrounds for the DMCs.
 - Swap from ResNet to U-Net
 
 ### Initial Report Writing :on:
-
 Veronika will be reading research paper reports on 5th December. Start writing and be sure to submit before then.
 
 ## Outcome of Week
 
 ### More Textures
-
 Spent a couple hours getting free metal textures. Now have 53.
+
+### Final Model Performance
+With the final code fixes and changes, we see an improvement in performance! I trained 3 different models. One that relies fully on BCE loss, another fully on Dice loss, and a final one using a 1:1 mix of the two.
+
+Below is a Table showing YOLO crops and the binarized image from successful decodings of each Model. The model relying purely on Dice loss produced purely white images, so it is excluded.
+
+| YOLO Crop | BCE Loss Binarizer | BCE + Dice Loss Binarizer |
+| :-------: | :----------------: | :-----------------------: |
+| <img width="500" alt="1_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/1_noisy.png"> | <img width="500" alt="100_1_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_1_bin.png"> | N/A |
+| <img width="500" alt="2_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/2_noisy.png"> | <img width="500" alt="100_2_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_2_bin.png"> | <img width="500" alt="102_2_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_2_bin.png"> |
+| <img width="500" alt="3_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/3_noisy.png"> | <img width="500" alt="100_3_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_3_bin.png"> | <img width="500" alt="102_3_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_3_bin.png"> |
+| <img width="500" alt="4_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/4_noisy.png"> | <img width="500" alt="100_4_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_4_bin.png"> | <img width="500" alt="102_4_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_4_bin.png"> |
+| <img width="500" alt="5_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/5_noisy.png"> | <img width="500" alt="100_5_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_5_bin.png"> | <img width="500" alt="102_5_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_5_bin.png"> |
+| <img width="500" alt="6_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/6_noisy.png"> | <img width="500" alt="100_6_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_6_bin.png"> | <img width="500" alt="102_6_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_6_bin.png"> |
+| <img width="500" alt="7_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/7_noisy.png"> | <img width="500" alt="100_7_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_7_bin.png"> | <img width="500" alt="102_7_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_7_bin.png"> |
+| <img width="500" alt="8_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/8_noisy.png"> | <img width="500" alt="100_8_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_8_bin.png"> | <img width="500" alt="102_8_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_8_bin.png"> |
+| <img width="500" alt="9_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/9_noisy.png"> | <img width="500" alt="100_9_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_9_bin.png"> | <img width="500" alt="102_9_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_9_bin.png"> |
+
+Below is a final Table of performance of decode rates.
+
+| Measure              | Baseline | YOLO | YOLO + Binarizer |
+| -------------------- | :------: | :--: | :--------------: |
+| Valid DM decode rate | 0.12     | 0.12 | 0.18             |
+| Total Runtime (s)    | TBD      | TBD  | TBD              |
 
 # Week 10 - 5 December 2024
 
