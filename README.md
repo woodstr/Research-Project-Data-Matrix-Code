@@ -393,7 +393,7 @@ Yucheng has spotted mistakes I have made in the code. This final week will be sp
 
 I should get around 50-100 different metal textures as backgrounds for the DMCs.
 
-#### Code fixes :on:
+#### Code fixes :heavy_check_mark:
 - Don't normalize images at any stages
 - Early stopping based on validation, not training!
 - Change augmentation based on notes
