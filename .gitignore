@@ -27,3 +27,9 @@ data/stats/successes/baseline/*
 # synthesized dataset
 data/synth_data/ground_truth/*
 data/synth_data/noisy/*
+
+# pycache directories
+__pycache__/
+
+# new binarizer models
+torch/binarizer_10*.pt
