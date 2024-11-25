@@ -419,17 +419,23 @@ Below is a Table showing YOLO crops and the binarized image from successful deco
 | <img width="500" alt="3_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/3_noisy.png"> | <img width="500" alt="100_3_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_3_bin.png"> | <img width="500" alt="102_3_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_3_bin.png"> |
 | <img width="500" alt="4_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/4_noisy.png"> | <img width="500" alt="100_4_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_4_bin.png"> | <img width="500" alt="102_4_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_4_bin.png"> |
 | <img width="500" alt="5_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/5_noisy.png"> | <img width="500" alt="100_5_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_5_bin.png"> | <img width="500" alt="102_5_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_5_bin.png"> |
-| <img width="500" alt="6_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/6_noisy.png"> | <img width="500" alt="100_6_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_6_bin.png"> | <img width="500" alt="102_6_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_6_bin.png"> |
+| <img width="500" alt="6_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/6_noisy.png"> | <img width="500" alt="100_6_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_6_bin.png"> | N/A |
 | <img width="500" alt="7_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/7_noisy.png"> | <img width="500" alt="100_7_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_7_bin.png"> | <img width="500" alt="102_7_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_7_bin.png"> |
 | <img width="500" alt="8_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/8_noisy.png"> | <img width="500" alt="100_8_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_8_bin.png"> | <img width="500" alt="102_8_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_8_bin.png"> |
 | <img width="500" alt="9_noisy" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/9_noisy.png"> | <img width="500" alt="100_9_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/100_9_bin.png"> | <img width="500" alt="102_9_bin" src="https://github.com/woodstr/Research-Project-Data-Matrix-Code/blob/main/figures/final_binarization/102_9_bin.png"> |
 
 Below is a final Table of performance of decode rates.
 
-| Measure              | Baseline | YOLO | YOLO + Binarizer |
-| -------------------- | :------: | :--: | :--------------: |
-| Valid DM decode rate | 0.12     | 0.12 | 0.18             |
-| Total Runtime (s)    | TBD      | TBD  | TBD              |
+| Measure              | Baseline | YOLO   | YOLO + Binarizer |
+| -------------------- | :------: | :----: | :--------------: |
+| Valid DM decode rate | 0.12     | 0.12   | **0.18**         |
+| Total Runtime (s)    | 46       | **27** | 148              |
+
+Notes:
+- Experiment done on laptop cpu.
+- Baseline altered from previous experiments. Now has a limit of 1s for decoding and only looks for 1 DMC.
+- YOLO gives the best speed, without sacrificing decode rate.
+- While YOLO + Binarizer brings a better decode rate (over baseline!), it slows down performance to less than real-time. (~3s to process each image)
 
 # Week 10 - 5 December 2024
 
