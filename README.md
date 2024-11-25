@@ -385,7 +385,7 @@ Using ResNet gave a worse decode rate, 0.6.
 
 ## Goals
 
-### Final coding :on:
+### Final coding :heavy_check_mark:
 
 Yucheng has spotted mistakes I have made in the code. This final week will be spent with rewrites and fixes based on his advice.
 
