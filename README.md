@@ -399,7 +399,7 @@ I should get around 50-100 different metal textures as backgrounds for the DMCs.
 - Change augmentation based on notes
 - Swap from ResNet to U-Net
 
-### Initial Report Writing :on:
+### Initial Report Writing :heavy_exclamation_mark:
 Veronika will be reading research paper reports on 5th December. Start writing and be sure to submit before then.
 
 ## Outcome of Week
