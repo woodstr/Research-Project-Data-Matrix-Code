@@ -439,16 +439,20 @@ Notes:
 
 # Week 10 - 5 December 2024
 
-## Goals
+### Rerun Binarizer Test :on:
+Rerun the test to be on all MAN images containing lazer-markings.
 
-Report Writing.
+### Report Writing :on:
+Submit before 5th to get feedback from Veronika.
 
-## Outcome of Week
-
-
+Notes:
+- [Use template from DASYA](https://www.overleaf.com/latex/templates/labreport-ieee-journal-paper-template/ypbfnkbvsyhw)
+- Show both YOLO eval on test set, and YOLO + Binarizer on all MAN images excluding dot-peen markings.
+  - Last is valid because the binarizer was not trained on MAN data
+- Include success cases AND failure cases, discussing them. Propose suggestions for future work to deal with failure cases.
+  - Definetely for dot peen, why does it fail? Why does one case pass? How can we improve that?
 
 # Week 11 - 12 December 2024
 
 ### Finish Paper :x:
-
 Paper is due 16th December at 14:00.
