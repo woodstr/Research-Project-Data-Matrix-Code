@@ -451,7 +451,7 @@ Notes:
   - Last is valid because the binarizer was not trained on MAN data
 - Include success cases AND failure cases, discussing them. Propose suggestions for future work to deal with failure cases.
   - Definetely for dot peen, why does it fail? Why does one case pass? How can we improve that?
-- No strict page count. Be reasonable, not too short, not too long, just right.
+- No strict page count. Be reasonable, not too short, not too long, just right. A typical conference paper length is something like 8 pages.
 
 # Week 11 - 12 December 2024
 
