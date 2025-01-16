@@ -439,10 +439,10 @@ Notes:
 
 # Week 10 - 5 December 2024
 
-### Rerun Binarizer Test :on:
+### Rerun Binarizer Test :heavy_check_mark:
 Rerun the test to be on all MAN images containing lazer-markings.
 
-### Report Writing :on:
+### Report Writing :heavy_check_mark:
 Submit before 5th to get feedback from Veronika.
 
 Notes:
@@ -455,5 +455,5 @@ Notes:
 
 # Week 11 - 12 December 2024
 
-### Finish Paper :x:
+### Finish Paper :heavy_check_mark:
 Paper is due 16th December at 14:00.
